@@ -11,6 +11,8 @@ export class WarningAlertComponent implements OnInit {
   toggle = false;
   handle : any;
 
+  textData: string;
+
   constructor() {
     this.handle = setInterval(() => {
       console.log('something.');
@@ -23,6 +25,12 @@ export class WarningAlertComponent implements OnInit {
   clear() {
     clearInterval(this.handle);
     this.toggle = !this.toggle;
+  }
+
+  addData(event: Event) {
+
+    this.textData = (event.target as HTMLInputElement).value;
+
   }
 
 }

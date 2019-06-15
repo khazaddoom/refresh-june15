@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="warning">
   
   <div *ngIf = "toggle" class="content">
@@ -9,4 +9,9 @@
 
   <button (click) = "clear()">Toggle</button>
 
-</div>
+</div> -->
+<label for="inputbox">Enter Name</label>
+<input type="text" id="inputbox" (input) = "addData($event)">
+
+{{textData}}
+
