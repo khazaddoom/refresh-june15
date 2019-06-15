@@ -1,4 +1,10 @@
 
 <div class="warning">
-  {{ '@ ' +  message }}
+  
+  <div *ngIf = "toggle" class="content">
+      {{ message }}
+  </div>
+  
+  <button (click) = "toggle = !toggle">Toggle</button>
+
 </div>
