@@ -9,7 +9,7 @@ export class CockpitComponent implements OnInit {
 
   todoName: string;
 
-  @Output() createToDoEvent = new EventEmitter();
+  @Output() createToDoEvent = new EventEmitter<string>();
 
   constructor() { }
 
