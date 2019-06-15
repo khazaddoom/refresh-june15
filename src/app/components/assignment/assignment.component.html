@@ -1,3 +1,4 @@
 <input type="text" [(ngModel)] = "username">
-<p>{{ username }}</p>
+<!-- <p [ngStyle] = "{ fontWeight: 700, color: 'green' }" >{{ username }}</p> -->
+<p *ngIf= "username !== '' " [ngClass] = "{ colorMe: true, highlightMe: true }" >{{ username }}</p>
 <button (click) = "username ='' " [disabled] = "username == ''? true : false ">Reset</button>

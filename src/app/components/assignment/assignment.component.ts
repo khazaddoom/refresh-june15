@@ -14,4 +14,9 @@ export class AssignmentComponent implements OnInit {
   ngOnInit() {
   }
 
+  getColor() {
+    return 'red';
+  }
+
+
 }
