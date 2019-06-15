@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'refresh-june15';
-
   
+  todos: string[] = ['Do Cloths', 'Buy raincoat'];
+
+  createToDoEventConsumer(newToDoItem:string) {
+
+    this.todos.push(newToDoItem);
+
+  }
+   
 }

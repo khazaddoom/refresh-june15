@@ -2,3 +2,9 @@
 <!-- <p [ngStyle] = "{ fontWeight: 700, color: 'green' }" >{{ username }}</p> -->
 <p *ngIf= "username !== '' " [ngClass] = "{ colorMe: true, highlightMe: true }" >{{ username }}</p>
 <button (click) = "username ='' " [disabled] = "username == ''? true : false ">Reset</button>
+
+<hr>
+
+<h1 *ngFor = "let iterator of someData">
+    <h3>*</h3>
+</h1>

@@ -10,7 +10,11 @@
     
 </div> -->
 
-<app-assignment></app-assignment>
+<app-cockpit (createToDoEvent) = "createToDoEventConsumer($event)"></app-cockpit>
+
+<hr>
+
+<app-server-element *ngFor = "let iterator of todos" [currentToDo] = "iterator"></app-server-element>
 
 <hr>
 

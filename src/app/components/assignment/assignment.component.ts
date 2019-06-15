@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class AssignmentComponent implements OnInit {
 
   username = '';
+
+  someData: number[];
   
-  constructor() { }
+  constructor() {
+    this.someData = [1, 2, 3, 4, 5]
+  }
 
   ngOnInit() {
   }
