@@ -5,6 +5,8 @@
       {{ message }}
   </div>
   
-  <button (click) = "toggle = !toggle">Toggle</button>
+  <button [disabled] = "toggle">Sample button</button>
+
+  <button (click) = "clear()">Toggle</button>
 
 </div>

@@ -9,10 +9,20 @@ export class WarningAlertComponent implements OnInit {
 
   message: string = `Maximum client refresh threshold of 100 has been reached.`;
   toggle = false;
+  handle : any;
 
-  constructor() { }
+  constructor() {
+    this.handle = setInterval(() => {
+      console.log('something.');
+    }, 1000);
+  }
 
   ngOnInit() {
+  }
+
+  clear() {
+    clearInterval(this.handle);
+    this.toggle = !this.toggle;
   }
 
 }
